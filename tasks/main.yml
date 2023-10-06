@@ -1,0 +1,13 @@
+- ansible.builtin.import_role:
+    name: compose_hull
+  vars:
+    service_defaults:
+      directory: "{{ docker_dir }}/2fauth"
+      name: twofauth
+      version: latest
+      port: 8000
+      traefik: true
+      external: true
+      watchtower: true
+      autoheal: true
+      skip_network_definition: false
