@@ -1,0 +1,6 @@
+- hosts: server
+  become: true
+  roles:
+    - role: twofauth
+      vars:
+        service_cfg: "{{ twofauth }}"
