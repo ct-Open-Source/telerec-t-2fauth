@@ -22,6 +22,7 @@ services:
       # This variable must match your installation's external address but keep in mind that
       # it's only used on the command line as a fallback value.
       - APP_URL={{ service_cfg.url }}
+      - ASSET_URL={{ service_cfg.url }}/
       # Turn this to true if you want your app to react like a demo.
       # The Demo mode reset the app content every hours and set a generic demo user.
       - IS_DEMO_APP=false
